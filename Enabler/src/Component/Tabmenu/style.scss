@@ -1,0 +1,19 @@
+.tab-menu-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  width: 100%;
+  button {
+    background-color: transparent;
+    padding: 4px 20px 10px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  button.active {
+    border-color: var(--tab-border);
+  }
+}

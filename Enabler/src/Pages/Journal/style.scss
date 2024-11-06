@@ -1,0 +1,126 @@
+.journal-container {
+  width: 100%;
+}
+.journal-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.journal-entry-container {
+  width: 75%;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 2px;
+  transition: all 1s ease-in-out;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: white;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+  }
+  .journal-images {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    .image-item {
+      max-width: 100px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 2px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .journal-input-container {
+    width: 100%;
+    padding: 10px 0px;
+
+    textarea {
+      width: 95%;
+      margin: 0 auto;
+      display: block;
+      resize: none;
+      border: 1px solid red;
+      border: none;
+      outline: none;
+      height: 19px;
+      max-height: 200px;
+      font-size: 14px;
+      overflow: auto;
+    }
+  }
+}
+.journal-save-btn {
+  width: 75%;
+  margin: 0 auto 10px;
+  button {
+    padding: 8px 20px;
+    border-radius: 2px;
+    background-color: rgb(79, 125, 252);
+    color: white;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  :last-child {
+    background-color: transparent;
+    color: black;
+  }
+}
+.journal-item {
+  width: 300px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 1px rgba(117, 117, 117, 0.164);
+  margin: 5px;
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    .avator {
+    }
+    .name-details {
+      padding-left: 5px;
+      color: #4d5358;
+      .name {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .date {
+        font-size: 12px;
+        margin-top: 2px;
+      }
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: #4d5358;
+    }
+  }
+  .body {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      color: #4d5358;
+    }
+  }
+}
